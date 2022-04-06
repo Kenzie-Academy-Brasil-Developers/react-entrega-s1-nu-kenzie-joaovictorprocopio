@@ -1,16 +1,16 @@
-const Card = ({ description, valor, typeValor }) => {
+const Card = ({ key, description, valor, typeValor }) => {
   return (
     <>
-      <section>
+      <li key={key}>
         <section>
           <h3>{description}</h3>
           <p>{valor}</p>
-          <button></button>
+          <img src="/src/img/trash.svg" alt="excluir" />
         </section>
         <section>
           <p>{typeValor}</p>
         </section>
-      </section>
+      </li>
     </>
   );
 };

@@ -1,15 +1,15 @@
 const TotalMoney = ({ saldo }) => {
   return (
-    <>
-      <section>
-        <h3>Valor total:</h3>
-        <p>Valor se refere ao saldo</p>
+    <section className="App-main-containerForm-totalMoney">
+      <section className="App-main-containerForm-totalMoney-cotainer">
+        <p className="totalMoney-p1">Valor total:</p>
+        <p className="totalMoney-p2">R$ {saldo}</p>
       </section>
 
       <section>
-        <p>{saldo}</p>
+        <p className="totalMoney-p3">Valor se refere ao saldo</p>
       </section>
-    </>
+    </section>
   );
 };
 

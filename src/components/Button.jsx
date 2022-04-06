@@ -1,7 +1,7 @@
-const Button = ({ children }) => {
+const Button = ({ styleButton, children }) => {
   return (
     <>
-      <button>{children}</button>
+      <button className={styleButton}>{children}</button>
     </>
   );
 };
